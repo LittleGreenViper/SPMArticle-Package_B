@@ -20,15 +20,11 @@ CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFT
 Little Green Viper Software Development LLC: https://littlegreenviper.com
 */
 
-import Foundation
-import Package_A
+import XCTest
+@testable import Package_BPrime
 
-public struct Package_B: PackageProtocol {
-    public let indent: Int
-    public let text: String
-    public init(indent inIndent: Int = 0) {
-        indent = inIndent
-        let prefix = String(repeating: "\t", count: inIndent)
-        text =  "\(prefix)Package_B, Version: 1.0.0\n" + Package_A(indent: 1).text
+final class Package_BPrimeTests: XCTestCase {
+    func testQuickly() {
+        XCTAssertEqual(Package_BPrime().text, "Package_BPrime, Version: 1.0.0\n\tPackage_A, Version: 1.0.0")
     }
 }

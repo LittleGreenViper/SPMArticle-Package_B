@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D419370724AD39BD00D6D766"
-               BuildableName = "libPackage_B.a"
-               BlueprintName = "Package_B"
+               BuildableName = "libPackage_BPrime.a"
+               BlueprintName = "Package_BPrime"
                ReferencedContainer = "container:Package_B.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4DDFEDC24AD187E00F29592"
-               BuildableName = "Package_BTests.xctest"
-               BlueprintName = "Package_BTests"
+               BuildableName = "Package_BPrimeTests.xctest"
+               BlueprintName = "Package_BPrimeTests"
                ReferencedContainer = "container:Package_B.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -61,8 +61,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D419370724AD39BD00D6D766"
-            BuildableName = "libPackage_B.a"
-            BlueprintName = "Package_B"
+            BuildableName = "libPackage_BPrime.a"
+            BlueprintName = "Package_BPrime"
             ReferencedContainer = "container:Package_B.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

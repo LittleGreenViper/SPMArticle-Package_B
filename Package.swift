@@ -24,7 +24,7 @@ Little Green Viper Software Development LLC: https://littlegreenviper.com
 import PackageDescription
 
 let package = Package(
-    name: "Package_B",
+    name: "Package_BPrime",
     platforms: [
         .iOS(.v11),
         .tvOS(.v11),
@@ -33,22 +33,22 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "Package-B",
-            targets: ["Package_B"]),
+            name: "Package-BPrime",
+            targets: ["Package_BPrime"]),
     ],
     dependencies: [
         .package(name: "Package_A", url: "git@github.com:LittleGreenViper/SPMArticle-Package_A.git", from: "1.0.0")
     ],
     targets: [
         .target(
-            name: "Package_B",
+            name: "Package_BPrime",
             dependencies: [
                 .product(name: "Package-A", package: "Package_A")
             ]
         ),
         .testTarget(
-            name: "Package_BTests",
-            dependencies: ["Package_B"]
+            name: "Package_BPrimeTests",
+            dependencies: ["Package_BPrime"]
         ),
     ]
 )
