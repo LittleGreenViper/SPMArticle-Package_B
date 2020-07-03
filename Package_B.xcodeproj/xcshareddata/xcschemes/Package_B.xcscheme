@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D41936F024AD38DC00D6D766"
+               BlueprintIdentifier = "D419370724AD39BD00D6D766"
                BuildableName = "libPackage_B.a"
                BlueprintName = "Package_B"
                ReferencedContainer = "container:Package_B.xcodeproj">
@@ -60,7 +60,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D41936F024AD38DC00D6D766"
+            BlueprintIdentifier = "D419370724AD39BD00D6D766"
             BuildableName = "libPackage_B.a"
             BlueprintName = "Package_B"
             ReferencedContainer = "container:Package_B.xcodeproj">

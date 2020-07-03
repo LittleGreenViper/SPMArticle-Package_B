@@ -25,6 +25,6 @@ import XCTest
 
 final class Package_BTests: XCTestCase {
     func testQuickly() {
-        XCTAssertEqual(Package_B().text, "Package_B, Version: 1.0.0\n\tPackage_A, Version: 1.0.0")
+        XCTAssertEqual(Package_B().text, "Package_B, Version: 1.0.0")
     }
 }

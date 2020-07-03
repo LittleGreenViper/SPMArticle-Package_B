@@ -21,14 +21,18 @@ Little Green Viper Software Development LLC: https://littlegreenviper.com
 */
 
 import Foundation
-import Package_A
 
-struct Package_B: PackageProtocol {
+public protocol PackageProtocol {
+    var text: String { get }
+    var indent: Int { get }
+}
+
+public struct Package_B: PackageProtocol {
     public let indent: Int
     public let text: String
-    init(indent inIndent: Int = 0) {
+    public init(indent inIndent: Int = 0) {
         indent = inIndent
         let prefix = String(repeating: "\t", count: inIndent)
-        text =  "\(prefix)Package_B, Version: 1.0.0\n" + Package_A(indent: inIndent + 1).text
+        text =  "\(prefix)Package_B, Version: 1.0.0"
     }
 }
