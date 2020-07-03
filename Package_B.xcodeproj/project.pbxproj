@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		D419371424AD3AE800D6D766 /* Package_BTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DDFEDF24AD187E00F29592 /* Package_BTests.swift */; };
 		D419371524AD3AEC00D6D766 /* Package_B.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DDFED724AD185C00F29592 /* Package_B.swift */; };
 		D456777B24AF83D8003F132F /* libPackage_B.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D419370824AD39BD00D6D766 /* libPackage_B.a */; };
+		D456778324AF853D003F132F /* Package-A in Frameworks */ = {isa = PBXBuildFile; productRef = D456778224AF853D003F132F /* Package-A */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D456778324AF853D003F132F /* Package-A in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +125,7 @@
 			);
 			name = Package_B;
 			packageProductDependencies = (
+				D456778224AF853D003F132F /* Package-A */,
 			);
 			productName = Product_A;
 			productReference = D419370824AD39BD00D6D766 /* libPackage_B.a */;
@@ -173,6 +176,7 @@
 			);
 			mainGroup = D4777E6424AD17EB000A7F27;
 			packageReferences = (
+				D456778124AF853D003F132F /* XCRemoteSwiftPackageReference "SPMArticle-Package_A" */,
 			);
 			productRefGroup = D4777E6E24AD17EB000A7F27 /* Products */;
 			projectDirPath = "";
@@ -417,6 +421,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D456778124AF853D003F132F /* XCRemoteSwiftPackageReference "SPMArticle-Package_A" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:LittleGreenViper/SPMArticle-Package_A.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D456778224AF853D003F132F /* Package-A */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D456778124AF853D003F132F /* XCRemoteSwiftPackageReference "SPMArticle-Package_A" */;
+			productName = "Package-A";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D4777E6524AD17EB000A7F27 /* Project object */;
 }

@@ -36,12 +36,19 @@ let package = Package(
             name: "Package-B",
             targets: ["Package_B"]),
     ],
+    dependencies: [
+        .package(name: "Package_A", url: "git@github.com:LittleGreenViper/SPMArticle-Package_A.git", from: "1.0.0")
+    ],
     targets: [
         .target(
             name: "Package_B",
-            dependencies: []),
+            dependencies: [
+                .product(name: "Package-A", package: "Package_A")
+            ]
+        ),
         .testTarget(
             name: "Package_BTests",
-            dependencies: ["Package_B"]),
+            dependencies: ["Package_B"]
+        ),
     ]
 )
